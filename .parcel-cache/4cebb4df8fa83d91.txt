@@ -1,4 +1,4 @@
-4185
+4187
 107C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\regions\FK.js132944746938785830 0
 86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\domhandler132944746925753999 1
 74C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\.prettierrc132821374728419037 0
@@ -25,7 +25,7 @@
 93C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\lmdb\dependencies132944746934017476 1
 107C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\css-tree\lib\tokenizer\utils.js132944746934253572 0
 123C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\resolver-default\lib\DefaultResolver.js132944746923593910 0
-67C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist132944751205161077 1
+67C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist132944959279526721 1
 97C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\dotenv-expand\LICENSE132944746924510903 0
 107C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\regions\AW.js132944746930738191 0
 102C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\forkify-architecture-recipe-loading.png132821374728922654 0
@@ -68,7 +68,7 @@
 119C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\object-values.js132944746943442145 0
 103C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\source-map-js\source-map.js132944750735029453 0
 107C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\regions\FR.js132944746939156636 0
-73C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\index.html132821374731216116 0
+73C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\index.html132944914347980758 0
 126C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\private-class-fields.js132944746944691307 0
 106C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\yaml\browser\dist\parse-cst.js132944746928143822 0
 75C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\package.json132944751177512129 0
@@ -173,7 +173,7 @@
 106C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\yaml\dist\warnings-1000a372.js132944746930962222 0
 102C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\source-map-js\package.json132944750735128094 0
 146C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\foo\nested\baz.js132944746927072597 0
-83C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\src\js\controller.js132821374733430033 0
+83C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\src\js\controller.js132944959278264251 0
 117C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\css-filters.js132944746935295542 0
 88C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\yaml\util.js132944746930818165 0
 86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\css-select132944746928762645 1
@@ -201,7 +201,7 @@
 111C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\regions\alt-oc.js132944746928260667 0
 126C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\runtime-js\src\helpers\node\wasm-loader.js132944746929830237 0
 124C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\core\test\fixtures\common-targets-ignore132944746935500328 1
-86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\icons.21bad73c.svg132944751205093565 0
+86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\icons.21bad73c.svg132944919637011383 0
 81C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\acorn132944746926595312 1
 90C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\ordered-binary132944746926475464 1
 111C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\fetch.js132944746938390401 0
@@ -281,7 +281,7 @@
 87C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\cosmiconfig132944746929118426 1
 128C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\optimizer-image\parcel-image.darwin-x64.node132944746929502505 0
 100C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\supports-color\readme.md132944746924949363 0
-88C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\favicon.8b2f57bf.png132944751204518465 0
+88C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\favicon.8b2f57bf.png132944919637011383 0
 84C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\chokidar132944750734972537 1
 107C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\lmdb\dependencies\lz4\lib\lz4.h132944746933867216 0
 101C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\reporter-cli\test132944746926455993 1
@@ -1657,7 +1657,7 @@
 112C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\ordered-binary\assets\powers-dre.png132944746926310698 0
 94C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\nullthrows\LICENSE132944746923432859 0
 125C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\css-tree\lib\syntax\node\PseudoElementSelector.js132944746933783298 0
-85C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\logo.726d37a8.png132944751203654186 0
+85C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\logo.726d37a8.png132944919637031737 0
 105C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\transformer-babel\lib132944746927931742 1
 89C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\nth-check\lib132944746926743261 1
 98C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\nth-check\package.json132944746925035927 0
@@ -3227,6 +3227,7 @@
 127C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\native-filesystem-api.js132944746942946011 0
 129C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\@parcel\runtime-js\lib\helpers\browser\html-loader.js132944746927686979 0
 124C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\navigator-language.js132944746942946011 0
+89C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.e37f48ea.js.map132944959279488127 0
 113C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\netinfo.js132944746943078587 0
 119C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\notifications.js132944746943235728 0
 120C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\caniuse-lite\data\features\object-observe.js132944746943442145 0
@@ -4179,8 +4180,9 @@
 89C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\.bin\svgo.cmd132944746949900949 0
 87C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\.bin\terser132944746949895975 0
 91C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\node_modules\.bin\terser.cmd132944746949895975 0
-85C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.62406edb.js132944751204727097 0
-89C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.62406edb.js.map132944751204727097 0
-86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.f7626f62.css132944751203649214 0
-90C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.f7626f62.css.map132944751203691416 0
-78C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.html132944751203963167 0
+85C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.62406edb.js132944912988493639 0
+89C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.62406edb.js.map132944912988493639 0
+85C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.e37f48ea.js132944959279483182 0
+86C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.f7626f62.css132944919636821187 0
+90C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.f7626f62.css.map132944919636821187 0
+78C:\Users\amupc\Desktop\PROGRAMMING\JAVA SCRIPT\PROJECT_FORKIFY\dist\index.html132944919637262680 0

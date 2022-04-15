@@ -2,7 +2,7 @@
   "name": "project_forkify",
   "version": "1.0.0",
   "description": "Check every recipe",
-  "main": "index.js",
+  "main": "index.js ",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -22,6 +22,8 @@
     "parcel": "^2.4.1"
   },
   "dependencies": {
+    "core-js": "^3.22.0",
+    "regenerator-runtime": "^0.13.9",
     "sass": "^1.50.0"
   }
 }
