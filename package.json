@@ -1,0 +1,27 @@
+{
+  "name": "project_forkify",
+  "version": "1.0.0",
+  "description": "Check every recipe",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoudelAmrit123/JS-PROJECT-FORKIFY.git"
+  },
+  "author": "Amrit Poudel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PoudelAmrit123/JS-PROJECT-FORKIFY/issues"
+  },
+  "homepage": "https://github.com/PoudelAmrit123/JS-PROJECT-FORKIFY#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}
