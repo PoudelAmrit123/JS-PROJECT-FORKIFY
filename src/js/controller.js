@@ -1,3 +1,4 @@
+ import * as model from './model' ; 
 import icons from '../img/icons.svg';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime' ; 
@@ -35,42 +36,27 @@ const renderSpinner = function (parentEL) {
       //  RECIPE
 
 const ShowRecipe = async function () {
-  //1//  Loading Recipe
+
+
+  renderSpinner(recipeContainer);
+
+
   try {
+    
+    const id = window.location.hash.slice(1);
+    console.log(id);
+    
+    if(!id) return ;
+    
+    
+    
+    
+             //1 LOading The REcipe
 
-       const id = window.location.hash.slice(1);
-         console.log(id);
-     
-          if(!id) return ;
+              await model.loadRecipe(id);
+               const {recipe} = model.state;
 
-
-
-
-    renderSpinner(recipeContainer);
-
-    const res = await fetch(
-      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
-    );
-
-    const data = await res.json();
-
-    if (!res.ok) throw new Error(`${data.message} ${res.status}`);
-
-    let { recipe } = data.data;
-    recipe = {
-      SourceUrl: recipe.source_url,
-      Publisher: recipe.publisher,
-      CookingTime: recipe.cooking_time,
-      Id: recipe.id,
-      Image: recipe.image_url,
-      Title: recipe.title,
-      Servings: recipe.servings,
-      Ingredients: recipe.ingredients,
-    };
-    console.log(res, data, recipe  );
-   
-
-    // 2 REndering Recipe
+             // 2 REndering Recipe
                  const Markup = `
                  <figure class="recipe__fig">
                  <img src="${recipe.Image}" alt="${recipe.Title}" class="recipe__img" />
