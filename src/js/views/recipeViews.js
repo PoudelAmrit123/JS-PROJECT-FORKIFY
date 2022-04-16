@@ -1,61 +1,29 @@
+
+   import view from './view';
 import icons from '../../img/icons.svg';
 
 
 
 
-class RecipeView  {
+class RecipeView extends view {
 
     
-    #parentElement = document.querySelector('.recipe');
-       #data ;
+    _parentElement = document.querySelector('.recipe');
+       _data ;
 
-       #errorMessage ='We could not find that recipe . Please try another one !';
+       _errorMessage ='We could not find that recipe . Please try another one !';
 
     render (data){
-        this.#data = data ;
-              const markup = this.#generateMarkup() ;
-                     this.#clear() ;
-        this.#parentElement.insertAdjacentHTML('afterbegin' , markup);
+        this._data = data ;
+              const markup = this._generateMarkup() ;
+                     this._clear() ;
+        this._parentElement.insertAdjacentHTML('afterbegin' , markup);
 
     }
-      #clear(){
-          this.#parentElement.innerHTML = '';
+      _clear(){
+          this._parentElement.innerHTML = '';
       }
 
-
-       
- renderSpinner  () {
-    const markup = `
-    <div class="spinner">
-    <svg>
-      <use href="${icons}#icon-loader"></use>
-    </svg>
-  </div> 
-  `;
-  
-    this.#parentElement.innerHTML = '';
-    this.#parentElement.insertAdjacentHTML('afterbegin', markup);
-  };
-
-
-    renderError(message = this.#errorMessage){
-
-          const markup = ` 
-          - <div class="error">
-            <div>
-              <svg>
-                <use href="${icons}#icon-alert-triangle"></use>
-              </svg>
-            </div>
-            <p>${message}</p>
-          </div> `;
-
-          this.#clear() ;
-        this.#parentElement.insertAdjacentHTML('afterbegin' , markup);
-
-
-    }
-  
 
              
       addHandlerRender(handler){
@@ -65,13 +33,13 @@ class RecipeView  {
 
 
 
-      #generateMarkup (){
+      _generateMarkup (){
 
            return   `
         <figure class="recipe__fig">
-        <img src="${this.#data.Image}" alt="${this.#data.Title}" class="recipe__img" />
+        <img src="${this._data.Image}" alt="${this._data.Title}" class="recipe__img" />
         <h1 class="recipe__title">
-          <span>${this.#data.Title}</span>
+          <span>${this._data.Title}</span>
         </h1>
       </figure>
 
@@ -80,14 +48,14 @@ class RecipeView  {
           <svg class="recipe__info-icon">
             <use href="${icons}#icon-clock"></use>
           </svg>
-          <span class="recipe__info-data recipe__info-data--minutes">${this.#data.CookingTime}</span>
+          <span class="recipe__info-data recipe__info-data--minutes">${this._data.CookingTime}</span>
           <span class="recipe__info-text">minutes</span>
         </div>
         <div class="recipe__info">
           <svg class="recipe__info-icon">
             <use href="${icons}#icon-users"></use>
           </svg>
-          <span class="recipe__info-data recipe__info-data--people">${this.#data.Servings}</span>
+          <span class="recipe__info-data recipe__info-data--people">${this._data.Servings}</span>
           <span class="recipe__info-text">servings</span>
 
           <div class="recipe__info-buttons">
@@ -122,7 +90,7 @@ class RecipeView  {
       <h2 class="heading--2">Recipe ingredients</h2>
       <ul class="recipe__ingredient-list">
 
-      ${this.#data.Ingredients.map( ing => {
+      ${this._data.Ingredients.map( ing => {
        return `  <li class="recipe__ingredient">
         <svg class="recipe__icon">
           <use href="${icons}#icon-check"></use>
@@ -143,12 +111,12 @@ class RecipeView  {
         <h2 class="heading--2">How to cook it</h2>
         <p class="recipe__directions-text">
           This recipe was carefully designed and tested by
-          <span class="recipe__publisher">${this.#data.Publisher}</span>. Please check out
+          <span class="recipe__publisher">${this._data.Publisher}</span>. Please check out
           directions at their website.
         </p>
         <a
           class="btn--small recipe__btn"
-          href="${this.#data.SourceUrl}"
+          href="${this._data.SourceUrl}"
           target="_blank"
         >
           <span>Directions</span>
