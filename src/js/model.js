@@ -3,6 +3,10 @@ import {API_URL} from './config';
 import {getJSON } from './helper';
   export const state = {
 recipe : {},
+ search : {
+   query : '',
+   results : [],
+ }
 
    };
 
@@ -11,7 +15,7 @@ recipe : {},
     
     try { 
     const res = await fetch(
-      `${API_URL}/${id}`
+      `${API_URL}${id}`
     );
               // // 
     const data = await res.json();
@@ -30,7 +34,7 @@ recipe : {},
       Servings: recipe.servings,
       Ingredients: recipe.ingredients,
     };
-    console.log( state.recipe)
+    // console.log( state.recipe)
   } catch (err){
 
     console.log(`${err}💥💥💥`);
@@ -43,6 +47,48 @@ recipe : {},
   }
 
 
+            export const loadSearchResults = async function (query){
+
+                  try {
+                    state.search.query = query ; 
 
 
-  
+                     const data = await getJSON(`${API_URL}?search=${query}`)
+                    //  console.log(data);
+
+                    state.search.results =  data.data.recipes.map ( rec => {
+
+                return {
+                  Publisher: rec.publisher,
+        
+                  Id: rec.id,
+                  Image: rec.image_url,
+                  Title: rec.title,
+
+                }
+
+                     })
+
+
+                  } catch (err ){
+
+                    console.log(`${err}💥💥💥`);
+                    throw err ;
+                
+                  }
+
+
+
+            } 
+
+            // loadSearchResults('milk')
+
+
+
+
+
+
+
+
+
+

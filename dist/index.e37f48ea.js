@@ -519,6 +519,8 @@ var _webImmediateJs = require("core-js/modules/web.immediate.js");
 var _model = require("./model");
 var _recipeViews = require("./views/recipeViews");
 var _recipeViewsDefault = parcelHelpers.interopDefault(_recipeViews);
+var _searchview = require("./views/searchview");
+var _searchviewDefault = parcelHelpers.interopDefault(_searchview);
 var _runtime = require("regenerator-runtime/runtime");
 // https://forkify-api.herokuapp.com/v2
 ///////////////////////////////////////
@@ -541,12 +543,24 @@ const controlRecipe = async function() {
 //  ['hashchange' , 'load'].forEach(  ev => window.addEventListener( ev , controlRecipe));
 //  window.addEventListener('hashchange' ,controlRecipe )
 //  window.addEventListener('load' ,controlRecipe )
+const controlSearchResults = async function() {
+    try {
+        const query = _searchviewDefault.default.getQuery();
+        if (!query) return;
+        await _model.loadSearchResults('query');
+    //  console.log(model.state.search.results);
+    } catch (err) {
+        console.log(err);
+    }
+};
+controlSearchResults();
 const init = function() {
     _recipeViewsDefault.default.addHandlerRender(controlRecipe);
+    _searchviewDefault.default.addHandlerSearch(controlSearchResults);
 };
 init();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","./model":"Y4A21","./views/recipeViews":"fR5Tr"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","./model":"Y4A21","./views/recipeViews":"fR5Tr","./views/searchview":"furg1"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -2205,15 +2219,21 @@ parcelHelpers.export(exports, "state", ()=>state
 );
 parcelHelpers.export(exports, "loadRecipe", ()=>loadRecipe
 );
+parcelHelpers.export(exports, "loadSearchResults", ()=>loadSearchResults
+);
 var _regeneratorRuntime = require("regenerator-runtime");
 var _config = require("./config");
 var _helper = require("./helper");
 const state = {
-    recipe: {}
+    recipe: {},
+    search: {
+        query: '',
+        results: []
+    }
 };
 const loadRecipe = async function(id) {
     try {
-        const res = await fetch(`${_config.API_URL}/${id}`);
+        const res = await fetch(`${_config.API_URL}${id}`);
         // // 
         const data = await res.json();
         if (!res.ok) throw new Error(`${data.message} ${res.status}`);
@@ -2229,19 +2249,38 @@ const loadRecipe = async function(id) {
             Servings: recipe.servings,
             Ingredients: recipe.ingredients
         };
-        console.log(state.recipe);
+    // console.log( state.recipe)
     } catch (err) {
         console.log(`${err}💥💥💥`);
         throw err;
     }
 };
+const loadSearchResults = async function(query) {
+    try {
+        state.search.query = query;
+        const data = await _helper.getJSON(`${_config.API_URL}?search=${query}`);
+        //  console.log(data);
+        state.search.results = data.data.recipes.map((rec)=>{
+            return {
+                Publisher: rec.publisher,
+                Id: rec.id,
+                Image: rec.image_url,
+                Title: rec.title
+            };
+        });
+    } catch (err) {
+        console.log(`${err}💥💥💥`);
+        throw err;
+    }
+} // loadSearchResults('milk')
+;
 
 },{"regenerator-runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./config":"k5Hzs","./helper":"lVRAz"}],"k5Hzs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_URL", ()=>API_URL
 );
-const API_URL = 'https://forkify-api.herokuapp.com/api/v2/recipes';
+const API_URL = 'https://forkify-api.herokuapp.com/api/v2/recipes/';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lVRAz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2446,6 +2485,28 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}]},["ddCAb","aenu9"], "aenu9", "parcelRequired04b")
+},{}],"furg1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+class SearchView {
+    #parentEL = document.querySelector('.search');
+    getQuery() {
+        const query = this.#parentEL.querySelector('.search__field').value;
+        this.#clearInput();
+        return query;
+    }
+     #clearInput() {
+        return this.#parentEL.querySelector('.search__field').value = '';
+    }
+    addHandlerSearch(handler) {
+        this.#parentEL.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handler();
+        });
+    }
+}
+exports.default = new SearchView();
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["ddCAb","aenu9"], "aenu9", "parcelRequired04b")
 
 //# sourceMappingURL=index.e37f48ea.js.map
